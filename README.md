@@ -13,7 +13,7 @@ This project focuses on predicting Parkinson's disease using Support Vector Mach
 
 1. Clone the repository:
    ```
-   git clone https://github.com/charvijain12/Parkinsons-Disease-Prediction.git
+   git clone https://github.com/charvijain12/ParkinsonsVoiceDetect.git
    ```
 
 2. Install the required dependencies if not already installed:
