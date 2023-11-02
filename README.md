@@ -1,39 +1,56 @@
-# Parkinson's Disease Prediction
-Parkinson's Disease Prediction is a machine learning project that aims to predict the presence of Parkinson's disease in individuals based on voice recordings. Parkinson's disease is a neurodegenerative disorder that affects movement and can lead to tremors, rigidity, and difficulty with speech. Early detection of Parkinson's disease is crucial for effective treatment, and this project aims to provide a tool for early diagnosis.
+# Parkinsons Disease Prediction Using SVM
 
-The project uses a dataset of voice recordings from individuals with and without Parkinson's disease, and applies machine learning algorithms to classify the recordings as either Parkinson's positive or negative. The algorithms used include K-Nearest Neighbors, Random Forest, and Support Vector Machine. The dataset is preprocessed to extract relevant features from the recordings, such as mean frequency and standard deviation.
+This project focuses on predicting Parkinson's disease using Support Vector Machine (SVM). The goal is to provide an early diagnosis of Parkinson's disease based on relevant features extracted from voice recordings. This helps in early detection and effective treatment of the disease.
 
-The project is implemented in Python using the scikit-learn library for machine learning and pandas for data manipulation. The project also includes data visualization using matplotlib and seaborn, and performance evaluation using metrics such as accuracy, precision, recall, and F1 score.
+## Getting Started
 
-## How to use
-To use this project, you can clone the repository and run the `Parkinsons_Disease_Prediction.ipynb` file in Jupyter Notebook or Google Colab. The notebook contains all the code and documentation needed to run the project, including data loading, preprocessing, model training, and performance evaluation. You can modify the code and parameters to experiment with different models and features, or use the existing code as a basis for your own Parkinson's disease prediction project.
+### Prerequisites
 
-## Dataset
-The dataset used in this project is the `Parkinsons Telemonitoring Data Set` from the UCI Machine Learning Repository. The dataset contains voice recordings from individuals with Parkinson's disease and healthy individuals, collected by a telemonitoring device. The recordings include sustained vowel phonations as well as speech tasks, and are processed to extract various acoustic features. The dataset includes 5875 recordings from 42 individuals, and is split into training and testing sets.
+- Python 3
+- Libraries: pandas, numpy, scikit-learn
 
-## Project structure
-The project repository has the following structure:
+### Installation
 
-1. `Parkinsons_Disease_Prediction.ipynb`: Jupyter Notebook file containing the project code and documentation.
+1. Clone the repository:
+   ```
+   git clone https://github.com/charvijain12/Parkinsons-Disease-Prediction.git
+   ```
 
-2. `parkinsons.data`: CSV file containing the training data.
+2. Install the required dependencies if not already installed:
+   ```
+   pip install pandas numpy scikit-learn
+   ```
 
-3. `parkinsons.names`: Text file containing the dataset description and attribute information.
+## Data Collection & Analysis
 
-## Dependencies
-1. Python 3.6+
+- The dataset is loaded from a CSV file containing voice recordings.
+- The first 5 rows of the dataset are displayed.
+- Basic information about the dataset is provided.
 
-2. pandas 1.0+
+## Data Pre-Processing
 
-3. scikit-learn 0.23+
+- Data features and the target variable are separated.
+- Data is split into training and testing sets.
+- Data standardization is performed to scale the features.
 
-4. matplotlib 3.2+
+## Model Training
 
-5. seaborn 0.10+
+- A Support Vector Machine (SVM) with a linear kernel is chosen as the classification model.
+- The SVM model is trained using the training data.
 
+## Model Evaluation
 
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any suggestions or feedback
+- Accuracy scores for the training and testing data are calculated.
+
+## Building a Predictive System
+
+- The project demonstrates how to make predictions using the trained SVM model.
+- It provides an example input, standardizes it, and predicts the presence of Parkinson's disease.
 
 ## License
-This project is licensed under the `MIT License`.
+
+This project is licensed under the MIT License.
+
+### Acknowledgments
+
+- Dataset source: UCI Machine Learning Repository
