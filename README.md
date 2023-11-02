@@ -1,42 +1,50 @@
-# Parkinsons Disease Prediction Using SVM
+# ParkinSVM: Parkinson's Disease Prediction Using SVM
 
-This project focuses on predicting Parkinson's disease using Support Vector Machine (SVM). The goal is to provide an early diagnosis of Parkinson's disease based on relevant features extracted from voice recordings. This helps in early detection and effective treatment of the disease.
+ParkinSVM is a project focused on predicting Parkinson's disease using Support Vector Machine (SVM). Its goal is to provide an early diagnosis of Parkinson's disease based on relevant features extracted from voice recordings, enabling early detection and effective treatment.
 
 ## Getting Started
 
 ### Prerequisites
+
+Before you get started, ensure you have the following prerequisites:
 
 - Python 3
 - Libraries: pandas, numpy, scikit-learn
 
 ### Installation
 
+Follow these steps to set up and run the project:
+
 1. Clone the repository:
-   ```
-   git clone https://github.com/charvijain12/ParkinsonsVoiceDetect.git
+
+   ```bash
+   git clone https://github.com/charvijain12/ParkinSVM.git
    ```
 
 2. Install the required dependencies if not already installed:
-   ```
+
+   ```bash
    pip install pandas numpy scikit-learn
    ```
 
 ## Data Collection & Analysis
 
-- The dataset is loaded from a CSV file containing voice recordings.
-- The first 5 rows of the dataset are displayed.
+- The project loads the dataset from a CSV file containing voice recordings.
+- It displays the first 5 rows of the dataset.
 - Basic information about the dataset is provided.
 
 ## Data Pre-Processing
 
-- Data features and the target variable are separated.
-- Data is split into training and testing sets.
-- Data standardization is performed to scale the features.
+The project performs the following data pre-processing steps:
+
+- Separates data features and the target variable.
+- Splits the data into training and testing sets.
+- Standardizes the data to scale the features.
 
 ## Model Training
 
 - A Support Vector Machine (SVM) with a linear kernel is chosen as the classification model.
-- The SVM model is trained using the training data.
+- The project trains the SVM model using the training data.
 
 ## Model Evaluation
 
@@ -44,7 +52,8 @@ This project focuses on predicting Parkinson's disease using Support Vector Mach
 
 ## Building a Predictive System
 
-- The project demonstrates how to make predictions using the trained SVM model.
+The project demonstrates how to build a predictive system using the trained SVM model:
+
 - It provides an example input, standardizes it, and predicts the presence of Parkinson's disease.
 
 ## License
@@ -54,3 +63,5 @@ This project is licensed under the MIT License.
 ### Acknowledgments
 
 - Dataset source: UCI Machine Learning Repository
+
+Feel free to explore, contribute, and use this project to support early diagnosis of Parkinson's disease using SVM.
